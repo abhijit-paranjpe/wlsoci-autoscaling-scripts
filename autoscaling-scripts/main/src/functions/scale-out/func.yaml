@@ -1,0 +1,16 @@
+schema_version: 20180708
+name: wlsoci-scale-out
+version: 1.0.0
+runtime: python
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+timeout: 300
+config:
+  stack_freeform_tag: wlsoci-wlsocidemo-system-tag
+  stack_freeform_tag_value: wlsocidemo-500e67f5
+  load_balancer_id: ocid1.loadbalancer.oc1.iad.aaaaaaaav35rfbzeyabmjyhur3qlakgtsbcskb2ljqqob5cykvbrjvj4mohq
+  lb_backend_set_name: wlsocidemo-lb-backendset
+  lb_backend_ports: 7003,7005
+  scaling_size: "1"
+  wlsc_email_notification_topic_id: ocid1.onstopic.oc1.iad.aaaaaaaanvlcb3uevt7dmijuxuq6fan7b44dt7ayixwdxmeb3gh3xhwqsvua
+
