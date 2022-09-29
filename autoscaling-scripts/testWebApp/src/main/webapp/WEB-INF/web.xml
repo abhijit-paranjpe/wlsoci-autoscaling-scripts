@@ -1,0 +1,13 @@
+<!--
+   Copyright (c) 2022, Oracle and/or its affiliates. All rights reserved.
+-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+id="WebApp_ID" version="3.0">
+<context-param>
+  <param-name>weblogic.websocket.tyrus.session-max-idle-timeout</param-name>
+  <param-value>300000</param-value>
+</context-param></web-app>
