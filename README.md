@@ -1,1 +1,1 @@
-# wlsoci-samples
+# wlsoci-autoscaling-scripts
