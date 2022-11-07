@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-#
-# Copyright (c) 2022, Oracle and/or its affiliates. All rights reserved.
+
+# Copyright (c) 2022, Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v1.0 as shown at https://oss.oracle.com/licenses/upl.
+# 
 # Utility script to start and stop individual managed server by index
 # Params:
 #   managed_server_node_index: index of the managed server that needs to be stopped or started
