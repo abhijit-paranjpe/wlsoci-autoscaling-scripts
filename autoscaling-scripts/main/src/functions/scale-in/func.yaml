@@ -7,9 +7,9 @@ memory: 256
 timeout: 300
 config:
   min_wls_node_count: "2"
-  stack_freeform_tag: wlsoci-wlsocidemo-system-tag
-  stack_freeform_tag_value: wlsocidemo-500e67f5
-  load_balancer_id: ocid1.loadbalancer.oc1.iad.aaaaaaaav35rfbzeyabmjyhur3qlakgtsbcskb2ljqqob5cykvbrjvj4mohq
-  lb_backend_set_name: wlsocidemo-lb-backendset
+  stack_freeform_tag: <freeform tag name>
+  stack_freeform_tag_value: <freeform tag value>
+  load_balancer_id: <ocid of oci load balancer>
+  lb_backend_set_name: <load balancer backend set name>
   scaling_size: "1"
-  wlsc_email_notification_topic_id: ocid1.onstopic.oc1.iad.aaaaaaaanvlcb3uevt7dmijuxuq6fan7b44dt7ayixwdxmeb3gh3xhwqsvua
+  wlsc_email_notification_topic_id: <ocid of notification topic>
