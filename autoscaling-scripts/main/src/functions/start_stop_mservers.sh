@@ -9,7 +9,6 @@
 #   action - start/stop managed server
 #
 
-echo $action"ing operation<<: $(date)"
 
 log_file="/tmp/$2_server.log"
 if [[ -f $log_file ]]; then
@@ -20,6 +19,8 @@ exec 2>&1 1>${log_file}
 # replace the variables
 managed_server_node_index=$1
 action=$2
+
+echo $action"ing operation<<: $(date)"
 
 server_name_prefix=$(python3 /opt/scripts/databag.py wls_ms_server_name)
 server_name=$server_name_prefix$managed_server_node_index
