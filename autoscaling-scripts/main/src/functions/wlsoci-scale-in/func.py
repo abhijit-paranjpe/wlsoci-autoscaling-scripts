@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2022 Oracle, Inc.
+# Copyright (c) 2023 Oracle, Inc.
 # Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
 #
 # Oracle Function script to shutdown OCI instances that running and are identified by a predefined free form tag.
