@@ -5,6 +5,8 @@
 # Oracle Function script to start  OCI instances that are shutdown and are identified by a predefined free form tag.
 # The tag VMs are started in descending order of creation time. So the instance that is first created is started first.
 # If load balancer is provisioned it will attempt to set the corresponding backend to ONLINE state to route the traffic to that backend.
+#
+# The script requires these env variables set:
 # The script requires these env variables set:
 #  stack_freeform_tag -  The name of VM tag
 #  stack_freeform_tag_value - The value of VM tag

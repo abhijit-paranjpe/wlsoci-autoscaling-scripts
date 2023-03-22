@@ -4,11 +4,11 @@
 #
 # Oracle Function script to shutdown OCI instances that running and are identified by a predefined free form tag.
 # The tagged VMs are shutdown descending order of their index in their names. So the instance with highest index is shutdown first.
+#
 # The script requires these configuration variables set:
-
 #  stack_freeform_tag -  The name of VM tag
 #  stack_freeform_tag_value - The value of VM tag
-#  scaling_size - Number of instances that need to scaled out for each invocation, default "1"
+#  scaling_size - Number of instances that need to scaled in for each invocation, default "1"
 #  load_balancer_id - The ocid of the loadbalancer associated with the vm instances
 #  lb_backend_set_name - Name of the backend set for the load balancer that has the backend for the vm instance.
 #  wlsc_email_notification_topic_id - OCID of notification topic to send email, optional
@@ -385,7 +385,7 @@ def email_message(alarm_payload, initial_node_count, final_node_count, status_me
         Alarm ID: {1}
         Alarm Body: {2}
         Time: {3}
-        Scale Out Node count  {4} -> {5}
+        Scale In Node count  {4} -> {5}
         Status: {6}
         Dedupe Key: {7}
         """.format(title, alarm_id, alarm_body, alarm_timestamp,
